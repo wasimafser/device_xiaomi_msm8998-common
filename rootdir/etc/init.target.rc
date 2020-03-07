@@ -164,6 +164,9 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
+    # Start RIL daemon
+    start ril-daemon
+
 on boot
     # Load QCACLD WLAN driver
     insmod /vendor/lib/modules/wlan.ko

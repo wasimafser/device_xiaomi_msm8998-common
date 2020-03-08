@@ -135,6 +135,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.mux_count=8 \
     persist.data.df.ul_mode=5
 
+# ParanoidDoze
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
